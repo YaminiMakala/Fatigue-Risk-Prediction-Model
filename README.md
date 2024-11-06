@@ -13,3 +13,9 @@ Class Imbalance Handling: Uses upsampling to balance the classes.
 Hyperparameter Tuning: Utilizes grid search for optimized model parameters.
 Model Persistence: Saves the trained model using pickle for future use.
 
+Technologies Used
+Python: Core programming language
+NumPy & Pandas: Data manipulation and analysis
+Scikit-Learn: Model training and evaluation
+GridSearchCV: Hyperparameter tuning
+Pickle: Model persistence
