@@ -1,4 +1,5 @@
 #Fatigue Risk Prediction Model
+
 This project predicts the "fatigue risk" based on health metrics using a Random Forest Classifier. It analyzes daily data over a month, including steps, heart rate, sleep hours, calories consumed, and mood. The model aims to identify fatigue risk for personalized health recommendations, particularly for those at risk of fatigue due to high heart rate and insufficient sleep.
 
 Project Overview
