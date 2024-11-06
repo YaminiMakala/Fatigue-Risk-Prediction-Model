@@ -1,10 +1,14 @@
-# Human-Digital-Twin-for-Personalized-Health-and-Wellness
-Welcome to the Human Digital Twin for Personalized Health and Wellness project! This project leverages data analytics, machine learning, and digital twin technology to create a digital representation of individuals. This "digital twin" monitors health and wellness metrics, tracks changes over time, and provides personalized recommendations for improved health.
+#Fatigue Risk Prediction Model
+This project predicts the "fatigue risk" based on health metrics using a Random Forest Classifier. It analyzes daily data over a month, including steps, heart rate, sleep hours, calories consumed, and mood. The model aims to identify fatigue risk for personalized health recommendations, particularly for those at risk of fatigue due to high heart rate and insufficient sleep.
+
 Project Overview
-The Human Digital Twin project aims to build a data-driven framework for representing, analyzing, and optimizing individual health profiles. By integrating real-time health and lifestyle data, this project enables personalized insights that help improve overall wellness. This project focuses on collecting, processing, and visualizing data from wearable devices, medical records, lifestyle choices, and more.
+The project generates synthetic data for a 30-day period and builds a binary classification model to predict fatigue risk. Fatigue risk is determined based on a combination of high heart rate (>100 bpm) and insufficient sleep (<6 hours). The model uses Random Forest with hyperparameter tuning to optimize accuracy.
+
 Key Features
-Data Ingestion: Collect data from various sources (e.g., wearables, fitness apps, and health records).
-Digital Twin Modeling: Create a virtual model of the user's health status, representing physiological, behavioral, and lifestyle factors.
-Personalized Recommendations: Generate insights and actionable recommendations based on real-time data and predictive analytics.
-Health Monitoring & Alerts: Track key health metrics and trigger alerts for irregularities or risk indicators.
-Progress Tracking: Visualize progress towards health and wellness goals with interactive dashboards and reports.
+Data Generation: Generates a synthetic dataset with daily metrics.
+Feature Engineering: Adds a 7-day moving average for steps and one-hot encodes mood.
+Binary Target Creation: Sets a binary target variable (fatigue_risk) based on health conditions.
+Class Imbalance Handling: Uses upsampling to balance the classes.
+Hyperparameter Tuning: Utilizes grid search for optimized model parameters.
+Model Persistence: Saves the trained model using pickle for future use.
+
